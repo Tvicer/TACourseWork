@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tacoursework.HelloController">
+   <children>
+      <ImageView fitHeight="593.0" fitWidth="503.0" layoutX="152.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@room.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="picMan" fitHeight="134.0" fitWidth="32.0" layoutX="225.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@man.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="infoLabel" layoutX="63.0" layoutY="45.0" prefHeight="20.0" prefWidth="123.0" text="Ничего не делаю" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnExec" layoutX="68.0" layoutY="86.0" mnemonicParsing="false" onAction="#btnExecClick" prefHeight="45.0" prefWidth="114.0" style="-fx-border-width: 5; -fx-background-radius: 10; -fx-border-radius: 5;" text="Выполнить" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ProgressBar fx:id="prgWater" layoutX="649.0" layoutY="29.0" prefHeight="15.0" prefWidth="120.0" progress="0.0" style="-fx-accent: green;" />
+      <ProgressBar fx:id="prgStudy" layoutX="649.0" layoutY="104.0" prefHeight="15.0" prefWidth="120.0" progress="0.0" style="-fx-accent: green;" />
+      <ProgressBar fx:id="prgSleep" layoutX="649.0" layoutY="79.0" prefHeight="15.0" prefWidth="120.0" progress="0.0" style="-fx-accent: green;" />
+      <ProgressBar fx:id="prgFood" layoutX="649.0" layoutY="54.0" prefHeight="15.0" prefWidth="120.0" progress="0.0" style="-fx-accent: green;" />
+      <ProgressBar fx:id="prgWork" layoutX="649.0" layoutY="129.0" prefHeight="15.0" prefWidth="120.0" progress="0.0" style="-fx-accent: green;" />
+      <Label layoutX="594.0" layoutY="28.0" prefHeight="17.0" text="Жажда" />
+      <Label layoutX="597.0" layoutY="53.0" text="Голод" />
+      <Label layoutX="586.0" layoutY="78.0" text="Усталость" />
+      <Label layoutX="597.0" layoutY="103.0" text="Учёба" />
+      <Label layoutX="594.0" layoutY="128.0" text="Работа" />
+   </children>
+</AnchorPane>
